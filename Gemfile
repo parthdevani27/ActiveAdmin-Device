@@ -27,6 +27,10 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'devise'
 gem 'activeadmin'
+gem 'paperclip'
+gem 'ckeditor'
+gem "mini_magick"
+gem 'carrierwave'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false

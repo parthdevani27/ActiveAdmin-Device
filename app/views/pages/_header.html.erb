@@ -1,0 +1,17 @@
+
+<header class="header-fixed">
+
+	<div class="header-limiter">
+
+		<h1><a href="#"><span>CMS</span></a></h1>
+
+		<nav>
+			<% allPages.each do |item| %>
+		    	<a href="/cms/<%= item.slug %>"><%= item.title %></a>
+			<% end %>
+		</nav>
+
+	</div>
+
+</header>
+<br><br>

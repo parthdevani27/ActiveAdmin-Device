@@ -215,6 +215,8 @@ ActiveAdmin.setup do |config|
   #
   # To load a javascript file:
   #   config.register_javascript 'my_javascript.js'
+  # config.register_javascript 'ckeditor/init.js'
+  config.register_javascript Ckeditor.cdn_url
 
   # == CSV options
   #
@@ -241,7 +243,7 @@ ActiveAdmin.setup do |config|
   #
     config.namespace :admin do |admin|
       admin.build_menu :default do |menu|
-        menu.add label: "Go To Front", url: "localhost:3000", html_options: { target: :blank }
+        # menu.add label: "Go To Front", url: "localhost:3000", html_options: { target: :blank }
       end
     end
 
